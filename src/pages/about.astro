@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import Card from '../components/Card.astro';
+---
+<BaseLayout title="About">
+  <PageHero eyebrow="About AI School" title="A separate branch for future-ready education." subtitle="AI School gives the organization a distinct identity for artificial intelligence, online education, and innovation-focused programs." />
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <h2 class="section__title">Why this branch exists</h2>
+        <p class="muted">Students are entering a world shaped by automation, intelligent software, remote collaboration, and fast-changing careers. This branch helps them prepare with confidence, not fear.</p>
+        <p class="muted">The school combines academic seriousness with practical technology skills, communication, ethics, and project execution.</p>
+      </div>
+      <div class="panel">
+        <h3>Positioning</h3>
+        <ul class="check-list">
+          <li>AI-integrated education</li>
+          <li>Online and hybrid learning</li>
+          <li>Student portfolios</li>
+          <li>Mentorship and research</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--light">
+    <div class="container">
+      <h2 class="section__title">Our principles</h2>
+      <div class="grid grid--3">
+        <Card title="Clarity" text="Students should understand what they are learning and why it matters." />
+        <Card title="Responsibility" text="AI tools should be used ethically, transparently, and thoughtfully." />
+        <Card title="Execution" text="Learning becomes stronger when students build, test, revise, and present." />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

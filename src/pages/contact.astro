@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+
+const departments = [
+  'Admissions',
+  'AI Academics',
+  'Online Learning Support',
+  'Student Projects & Lab',
+  'Partnerships'
+];
+---
+<BaseLayout title="Contact">
+  <PageHero eyebrow="Contact" title="Talk to the AI School team." subtitle="Reach out for admissions questions, program details, partnership ideas, or online school guidance." />
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <h2 class="section__title">General inquiries</h2>
+        <p class="muted">Use these placeholders until the official branch email, phone number, and office details are confirmed.</p>
+        <ul class="check-list">
+          <li>Email: admissions@aischool.edu</li>
+          <li>Phone: +1 (929) 928-1085</li>
+          <li>Office: 1 Ames Hill Drive, Springfield, MA 01105</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Departments</h3>
+        <ul class="check-list">
+          {departments.map((dept) => <li>{dept}</li>)}
+        </ul>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

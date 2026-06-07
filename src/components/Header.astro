@@ -1,0 +1,31 @@
+---
+const currentPath = Astro.url.pathname;
+const isActive = (href) => {
+  if (href === '/') return currentPath === '/';
+  return currentPath.startsWith(href);
+};
+const links = [
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
+  { href: '/programs', label: 'Programs' },
+  { href: '/ai-lab', label: 'AI Lab' },
+  { href: '/online-school', label: 'Online School' },
+  { href: '/admissions', label: 'Admissions' },
+  { href: '/contact', label: 'Contact' }
+];
+---
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="/">
+      <div class="brand__mark">AI</div>
+      <div class="brand__text">AI School</div>
+    </a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      {links.map((link) => (
+        <a href={link.href} class={isActive(link.href) ? 'is-active' : ''}>{link.label}</a>
+      ))}
+      <a class="apply-link" href="/admissions">Apply</a>
+    </nav>
+  </div>
+</header>

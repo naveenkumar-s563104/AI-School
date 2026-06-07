@@ -1,0 +1,9 @@
+---
+const { tag, icon, title, text } = Astro.props;
+---
+<article class="card">
+  {tag && <span class="tag">{tag}</span>}
+  {icon && <div class="icon">{icon}</div>}
+  <h3>{title}</h3>
+  <p>{text}</p>
+</article>

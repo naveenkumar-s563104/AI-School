@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+
+const posts = [
+  {
+    tag: 'Launch',
+    title: 'AI School branch prepares for new student pathways',
+    text: 'The branch introduces AI learning, online school structure, and project-based academic development.'
+  },
+  {
+    tag: 'Admissions',
+    title: 'Admissions roadmap released',
+    text: 'Families can now review the step-by-step pathway for consultation, application, and onboarding.'
+  },
+  {
+    tag: 'AI Lab',
+    title: 'AI Lab model announced',
+    text: 'The lab will support coding, prototyping, ethical AI use, and student capstone projects.'
+  },
+  {
+    tag: 'Student Life',
+    title: 'Mentorship circles added to the program model',
+    text: 'Students will have access to structured guidance and portfolio feedback throughout the year.'
+  },
+  {
+    tag: 'Online School',
+    title: 'Online learning pathway outlined',
+    text: 'The pathway is designed for flexibility while preserving academic structure and accountability.'
+  },
+  {
+    tag: 'Innovation',
+    title: 'Capstone showcase planning begins',
+    text: 'Students will present projects, prototypes, and research-inspired work to the community.'
+  }
+];
+---
+<BaseLayout title="News">
+  <PageHero eyebrow="News" title="Updates from AI School." subtitle="Use this page for announcements, program launches, student projects, admissions updates, and showcase events." />
+
+  <section class="section section--light">
+    <div class="container grid grid--3">
+      {posts.map((post) => (
+        <article class="card news-card">
+          <div class="news-card__media">{post.tag}</div>
+          <div class="news-card__body">
+            <span class="tag">{post.tag}</span>
+            <h3>{post.title}</h3>
+            <p>{post.text}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

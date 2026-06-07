@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import Card from '../components/Card.astro';
+---
+<BaseLayout title="Programs">
+  <PageHero eyebrow="Programs" title="Tracks for AI, online learning, and innovation." subtitle="Each pathway is designed to be practical, student-friendly, and strong enough to support future academic or career goals." />
+
+  <section class="section section--light">
+    <div class="container grid grid--3">
+      <Card tag="AI" title="AI Engineering" text="Python, data, machine learning concepts, AI tools, ethics, and applied technical projects." />
+      <Card tag="Online" title="Online School Pathway" text="A structured online school experience with academic accountability, coaching, and clear progress." />
+      <Card tag="Startup" title="Innovation & Entrepreneurship" text="Product ideas, startup thinking, pitch development, digital strategy, and real-world problem solving." />
+      <Card tag="Research" title="Research & Capstone" text="Student-led projects, technical writing, demonstrations, and portfolio-ready outcomes." />
+      <Card tag="Creative" title="Creative AI & Media" text="Digital storytelling, design, content creation, responsible generative AI, and presentation skills." />
+      <Card tag="Future" title="College & Career Readiness" text="Guidance for applications, profiles, interviews, communication, and long-term planning." />
+    </div>
+  </section>
+</BaseLayout>

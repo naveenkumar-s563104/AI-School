@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import Accordion from '../components/Accordion.astro';
+
+const steps = [
+  {
+    step: 'Step 1',
+    title: 'Consultation & Fit Conversation',
+    content: 'Speak with our admissions team about academic goals, program fit, and whether AI School is the right pathway.'
+  },
+  {
+    step: 'Step 2',
+    title: 'Online Application',
+    content: 'Submit the application form with academic background, interests, and any relevant student work or project samples.'
+  },
+  {
+    step: 'Step 3',
+    title: 'Document Review',
+    content: 'Provide school records or transcripts so the team can understand academic readiness and placement needs.'
+  },
+  {
+    step: 'Step 4',
+    title: 'Student Interview',
+    content: 'Meet with the team to discuss motivation, learning habits, technology interests, and future goals.'
+  },
+  {
+    step: 'Step 5',
+    title: 'Decision & Pathway Recommendation',
+    content: 'Receive the admissions decision with recommended track, next steps, and onboarding details.'
+  },
+  {
+    step: 'Step 6',
+    title: 'Onboarding',
+    content: 'Join orientation, set up learning tools, meet mentors, and begin the program.'
+  }
+];
+---
+<BaseLayout title="Admissions">
+  <PageHero eyebrow="Admissions" title="Your path into AI School." subtitle="A clear admissions process helps students and families choose the right track and start with confidence." />
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <h2 class="section__title">Personalized guidance from the start.</h2>
+        <p class="muted">We do not want students placed randomly. The admissions process helps identify goals, readiness, interests, and the right learning pathway.</p>
+        <div class="actions">
+          <a class="btn btn--primary" href="/contact">Contact Admissions</a>
+        </div>
+      </div>
+      <div class="panel">
+        <h3>Application checklist</h3>
+        <ul class="check-list">
+          <li>Student information</li>
+          <li>Academic records</li>
+          <li>Interest statement</li>
+          <li>Interview or consultation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">Application steps</h2>
+        <p class="muted">Use this as a simple visual roadmap for families.</p>
+      </div>
+      <Accordion items={steps} />
+    </div>
+  </section>
+</BaseLayout>

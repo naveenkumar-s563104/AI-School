@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import Card from '../components/Card.astro';
+---
+<BaseLayout title="Student Life">
+  <PageHero eyebrow="Student Life" title="A learning community for builders, thinkers, and future leaders." subtitle="Student life combines mentorship, collaboration, showcases, digital citizenship, and leadership opportunities." />
+
+  <section class="section section--light">
+    <div class="container grid grid--3">
+      <Card title="Mentorship Circles" text="Students meet regularly for guidance, reflection, project feedback, and academic support." />
+      <Card title="Project Showcases" text="Students present their work, explain decisions, and build confidence communicating ideas." />
+      <Card title="Online Community" text="Students collaborate through discussions, workshops, and digital learning routines." />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <h2 class="section__title">Beyond coursework</h2>
+        <p class="muted">A strong AI school experience should build character, discipline, communication, and collaboration, not just technical skills.</p>
+      </div>
+      <div class="panel">
+        <h3>Community features</h3>
+        <ul class="check-list">
+          <li>Student-led demo days</li>
+          <li>Leadership opportunities</li>
+          <li>Guest speakers and workshops</li>
+          <li>Portfolio feedback sessions</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

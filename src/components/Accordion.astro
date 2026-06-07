@@ -1,0 +1,25 @@
+---
+const { items } = Astro.props;
+---
+<div class="accordion">
+  {items.map((item, index) => (
+    <div class="acc-item">
+      <button class="acc-btn" aria-expanded={index === 0 ? 'true' : 'false'}>
+        <span><strong>{item.step}:</strong> {item.title}</span>
+        <span aria-hidden="true">＋</span>
+      </button>
+      <div class="acc-panel">
+        <p>{item.content}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
+<script>
+  document.querySelectorAll('.acc-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+    });
+  });
+</script>

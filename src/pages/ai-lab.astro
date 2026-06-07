@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import Card from '../components/Card.astro';
+---
+<BaseLayout title="AI Lab">
+  <PageHero eyebrow="AI Lab" title="Where students turn ideas into working prototypes." subtitle="The AI Lab is the innovation center of the branch: a place for coding, experimentation, ethical AI, demos, and portfolio projects." />
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <h2 class="section__title">What happens in the lab?</h2>
+        <ul class="check-list">
+          <li>AI tool exploration and responsible use</li>
+          <li>Python and data projects</li>
+          <li>Prototype development</li>
+          <li>Student demos and technical presentations</li>
+          <li>Research-inspired capstone work</li>
+        </ul>
+      </div>
+      <div class="ai-card">
+        <div class="ai-screen">
+          <div class="orb"></div>
+          <p class="muted" style="text-align:center;">Build. Test. Explain. Improve.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--light">
+    <div class="container">
+      <h2 class="section__title">Lab focus areas</h2>
+      <div class="grid grid--3">
+        <Card title="Machine Learning Concepts" text="Understand models, patterns, predictions, bias, and evaluation." />
+        <Card title="AI Applications" text="Build practical tools such as chat assistants, data dashboards, and automation workflows." />
+        <Card title="Ethics & Safety" text="Learn privacy, academic integrity, responsible prompting, and human judgment." />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

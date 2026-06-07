@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import Card from '../components/Card.astro';
+---
+<BaseLayout title="Home" description="AI School is a future-ready education branch for AI, online learning, and innovation.">
+  <section class="hero">
+    <div class="container hero__grid">
+      <div>
+        <div class="eyebrow">AI-powered education branch</div>
+        <h1>Build the future before graduation.</h1>
+        <p class="lead">AI School is a modern learning branch for students who want artificial intelligence, coding, online learning, research, entrepreneurship, and real-world project experience.</p>
+        <div class="actions">
+          <a class="btn btn--primary" href="/admissions">Start Application</a>
+          <a class="btn btn--secondary" href="/programs">Explore Programs</a>
+        </div>
+      </div>
+
+      <div class="ai-card">
+        <div class="ai-screen">
+  <div class="ai-network">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="dots">
+    <span></span><span></span><span></span>
+  </div>
+
+  <div class="terminal">
+    <div class="terminal-line">
+      <span class="prompt">$</span>
+      <span class="typed">python train_model.py</span>
+      <span class="cursor">|</span>
+    </div>
+
+    <div class="terminal-line muted">→ Loading student dataset... ✓</div>
+    <div class="terminal-line muted">→ Training neural network...</div>
+    <div class="terminal-line muted">→ Model accuracy: <span class="accent">87%</span></div>
+    <div class="terminal-line muted">→ Deploying project...</div>
+    <div class="terminal-line accent">✓ AI model ready. Portfolio project live.</div>
+  </div>
+
+  <p class="ai-caption">
+    Personalized AI learning pathways, portfolio projects, and guided mentorship.
+  </p>
+</div>
+      </div>
+    </div>
+
+    <div class="container metrics">
+      <div class="metric"><strong>AI</strong><span>Core curriculum</span></div>
+      <div class="metric"><strong>1:1</strong><span>Guidance options</span></div>
+      <div class="metric"><strong>100%</strong><span>Project based</span></div>
+      <div class="metric"><strong>Online</strong><span>Flexible model</span></div>
+    </div>
+  </section>
+
+  <section class="section section--light">
+    <div class="container">
+      <SectionHeader title="A school branch designed for the AI era." text="This is not just a coding club. It is a serious academic environment built around technology fluency, disciplined online learning, and practical innovation." />
+      <div class="grid grid--3">
+        <Card icon="01" title="AI Literacy" text="Students learn how modern AI systems work, where they are useful, and how to use them responsibly." />
+        <Card icon="02" title="Builder Mindset" text="Students create projects, prototypes, presentations, and portfolios instead of only memorizing concepts." />
+        <Card icon="03" title="Flexible Learning" text="Online and hybrid structures support students who need modern access, accountability, and guidance." />
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <h2 class="section__title">Academic depth with startup energy.</h2>
+        <p class="muted">The program blends college-prep expectations with the speed of AI, digital tools, design thinking, and entrepreneurship.</p>
+        <ul class="check-list">
+          <li>AI engineering and Python foundations</li>
+          <li>Online school pathways and academic coaching</li>
+          <li>Innovation, research, and capstone projects</li>
+          <li>Portfolio-building for future applications</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Student outcome focus</h3>
+        <p class="muted">By the end of the pathway, students should be able to explain technical concepts, build useful projects, present clearly, and show evidence of growth.</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

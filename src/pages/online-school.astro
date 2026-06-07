@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import Card from '../components/Card.astro';
+---
+<BaseLayout title="Online School">
+  <PageHero eyebrow="Online School" title="Flexible learning without losing structure." subtitle="The online school pathway is built for students who need flexibility, but still need guidance, academic expectations, and a real learning community." />
+
+  <section class="section section--light">
+    <div class="container grid grid--3">
+      <Card title="Live Guidance" text="Teacher support, check-ins, and structured academic routines." />
+      <Card title="Independent Mastery" text="Students learn to manage time, complete work, and show progress clearly." />
+      <Card title="Digital Community" text="Online collaboration, presentations, discussion groups, and mentor feedback." />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <h2 class="section__title">Built for modern families</h2>
+        <p class="muted">Online learning should not feel isolated or random. This model creates a clear path with academic rhythm, program identity, and project-based motivation.</p>
+      </div>
+      <div class="panel">
+        <h3>Best for students who need:</h3>
+        <ul class="check-list">
+          <li>Flexible scheduling</li>
+          <li>Strong digital learning habits</li>
+          <li>Access from different locations</li>
+          <li>Personalized academic pacing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
